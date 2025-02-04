@@ -1,0 +1,21 @@
+meta {
+  name: post user
+  type: http
+  seq: 3
+}
+
+post {
+  url: http://localhost:3333/user
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "cpf": "000.000.000-00",
+    "email":"lucasmoura@gmail.com", 
+    "name":"Lucas", 
+    "password":"123456", 
+    "phone":"86900000000"
+  }
+}

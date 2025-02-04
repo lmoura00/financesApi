@@ -1,0 +1,18 @@
+meta {
+  name: get all user
+  type: http
+  seq: 2
+}
+
+get {
+  url: http://localhost:3333/user
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "email":"teste@gmail.com",
+    "password":"secret"
+  }
+}
